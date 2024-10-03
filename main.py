@@ -214,12 +214,7 @@ for epoch in range(10001):
     optimizer.update_params(dense1)
     optimizer.update_params(dense2)
     optimizer.post_update_params()
-'''
-print(dense1.dweights)
-print(dense1.dbiases)
-print(dense2.dweights)
-print(dense2.dbiases)
-'''
+
 
 X_test, y_test = spiral_data(samples=100, classes=3)
 
